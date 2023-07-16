@@ -1,0 +1,27 @@
+<div style="height: 100%; box-sizing: border-box;">
+  <!-- <ag-grid-angular
+    style="width: 100%; height: 300px;"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [gridOptions]="gridOptions"
+    [serverSideInfiniteScroll]="true"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular> -->
+
+  <ag-grid-angular
+    style="width: 100%; height: 300px;"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [rowSelection]="rowSelection"
+    [rowModelType]="rowModelType"
+    [paginationPageSize]="100"
+    [cacheOverflowSize]="2"
+    [maxConcurrentDatasourceRequests]="2"
+    [infiniteInitialRowCount]="1"
+    [maxBlocksInCache]="2"
+    [getRowNodeId]="getRowNodeId"
+    [rowData]="rowData"
+    [serverSideInfiniteScroll]="true"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
+</div>
